@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vadapav</title>
+    <style>
+        body {
+            font-family: monospace;
+            background-color: #222;
+            color: #ddd;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        .floatleft{
+            float: left;
+            border-color: #444;
+        }
+        .floatright{
+            float: right;
+            border-color: rgb(147, 255, 219);
+            background-color: rgb(209, 255, 255);
+            color: #222;
+        }
+        fieldset{
+            border-radius: 12px;
+            padding: 10px;
+            width: auto;
+            display: inline-block;
+            margin: 10px;
+        }
+        .chat-container {
+            margin: 0px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .chat {
+            max-width: 800px;
+            width: 100%;
+            display: flex;
+            gap: 10px;
+        }
+        .chat input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        .chat button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #b5651d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .chat button:hover {
+            background-color: #a04f18;
+        }
+        #messages{
+            width: 100%;
+            display: block;
+            padding-top: 50px;
+            padding: 0px;
+            border-width: 8px;
+            border-radius: 20px;
+            border-color: #333;
+            min-height: 30px;
+            height: 40%;
+            font-size: 24px;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            margin: 0px;
+            padding-bottom: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="messages"></div>
+    <div class="chat-container">
+        <div class="chat">
+            <input type="text" placeholder="How may I help you with the menu..." id="chat-input">
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

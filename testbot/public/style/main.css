@@ -1,0 +1,113 @@
+nav .left{
+    float: left;
+}
+nav .left{
+    display: end;
+}
+#nav{
+    width: 100%;
+    background-color: #333;
+    border: 8px solid #333;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px; /* Add padding for space above chatbox */
+}
+h1 {
+    margin-top: 20px;
+    color: #b5651d;
+}
+.menu-container {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 15px;
+}
+.menu-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    gap: 15px;
+    width: 100%;
+}
+.menu-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures image fills the circle */
+}
+.menu-item h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+.menu-item input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+/* Place Order Button */
+.order-button {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #b5651d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.order-button:hover {
+    background-color: #a04f18;
+}
+/* Chatbox Styles */
+.chatbox-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chatbox {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.chatbox input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.chatbox button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #b5651d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.chatbox button:hover {
+    background-color: #a04f18;
+}
